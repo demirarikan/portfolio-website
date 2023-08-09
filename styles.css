@@ -6,17 +6,22 @@ h3,
 h4,
 h5,
 h6,
-p,
 ul,
 li {
     margin: 0;
     padding: 0;
+    line-height: 1.2;
+}
+
+p {
+    margin: 0.8em 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     line-height: 1.6;
-    background-color: #f7f7f7;
+    background-color: #0d1117;
+    color: #c9d1d9;
 }
 
 .wrapper {
@@ -35,7 +40,7 @@ body {
 header {
     text-align: left;
     /* Align the header content to the left */
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     /* Add top and bottom padding */
     padding-left: 60px;
     /* Add left padding to create space on the left */
@@ -51,17 +56,16 @@ header {
 }
 
 .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    background-color: red;
-    /* Placeholder red circle */
     margin-right: 20px;
     /* Add some spacing between the profile image and name */
 }
 
 .name {
-    font-size: 24px;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .social-links {
@@ -92,9 +96,9 @@ nav {
     /* Reduce the width of the navigation */
     margin-left: -20px;
     /* Offset the navigation bar from the center */
-    padding-right: 20px;
+    padding-right: 10px;
     /* Add some spacing between the navigation and the content */
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #c9d1d9;
     /* Add a border to separate the navigation from content */
 }
 
@@ -109,7 +113,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #c9d1d9;
     font-weight: bold;
 }
 
@@ -120,6 +124,7 @@ main {
     flex-direction: column;
     align-items: center;
     /* Center the main content vertically */
+    padding-left: 20px;
 }
 
 .blog-list {
@@ -133,11 +138,12 @@ main {
 
 .blog-list h2 {
     font-size: 18px;
+    line-height: 1.6;
+    font-size: 20px;
 }
 
 .blog-list p {
-    font-size: 14px;
-    color: #666;
+    color: #c9d1d9;
 }
 
 .email-address {

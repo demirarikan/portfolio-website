@@ -12,15 +12,20 @@
     <div class="wrapper">
         <header>
             <div class="profile-info">
-                <img src="red-circle-placeholder.png" alt="Profile Image" class="profile-image">
+                <img src="images/profile-pic.jpg" alt="Profile Image" class="profile-image">
                 <div class="personal-info">
-                    <div class="name">TEST TEST</div>
+                    <div class="name">Demir Arikan</div>
                     <div class="social-links">
-                        <a href="#" class="social-icon"><img src="email-icon.png" alt="Email"></a>
-                        <a href="#" class="social-icon"><img src="github-icon.png" alt="Github"></a>
-                        <a href="#" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+                        <a href="#" class="social-icon" id="email-icon"><img src="images/icons/email-icon-gray.png"
+                                alt="Email"></a>
+                        <a href="https://github.com/demirarikan" class="social-icon"><img
+                                src="images/icons/github-icon-gray.png" alt="Github"></a>
+                        <a href="https://www.linkedin.com/in/demir-arikan/" class="social-icon"><img
+                                src="images/icons/linkedin-icon-gray.png" alt="Linkedin"></a>
+                        <div class="email-address">dmrarikan@gmail.com</div>
                     </div>
                 </div>
+
             </div>
         </header>
 
@@ -34,11 +39,36 @@
             </nav>
 
             <main>
-                <p>This is the About page content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-                    sed enim quis sapien euismod laoreet.</p>
+                <p style="margin-top: 0em;">I'm Demir. I live in Munich, Germany. Welcome to my website where you can
+                    find more about me, my
+                    projects or just read my ramblings about things that I find in interesting.
+                </p>
+                <p>I'm currently studying my Master of Science in Computer Science at the Technical University of
+                    Munich with a focus on AI in medical imaging and robotics. I finished my Bachelor of Science in
+                    Computer Science at the university in 2022. Since 2023 I am working at <a
+                        href="iThera Medical">iThera Medical</a> as a software
+                    engineer working student.</p>
+                <p>Don't hesitate to contact me if you have any questions or just want to chat.</p>
+
+                <p>Inspired by the geniuses behind <a href="motherfuckingwebsite.com">motherfuckingwebsite.com</a>,
+                    <a href="bettermotherfuckingwebsite.com">bettermotherfuckingwebsite.com</a>
+                    and
+                    <a href="perfectmotherfuckingwebsite.com">perfectmotherfuckingwebsite.com</a>.
+                </p>
+
             </main>
         </div>
     </div>
+
+    <script>
+        // JavaScript to handle the email button click
+        const emailIcon = document.getElementById("email-icon");
+        const emailAddress = document.querySelector(".email-address");
+
+        emailIcon.addEventListener("click", () => {
+            emailAddress.classList.toggle("show");
+        });
+    </script>
 </body>
 
 </html>
